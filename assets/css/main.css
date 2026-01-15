@@ -1216,10 +1216,7 @@ input, select, textarea {
   z-index: 1;
 
   background-color: #111;
-  background-image: image-set(
-    url("../../images/bg_2.webp") type("image/webp"),
-    url("../../images/bg.jpg") type("image/jpeg")
-  );
+  background-image: url("../../images/bg0.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1227,6 +1224,7 @@ input, select, textarea {
   transform: scale(1.125);
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 }
+
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
