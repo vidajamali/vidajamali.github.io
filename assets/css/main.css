@@ -1721,3 +1721,81 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.about-research {
+  margin-top: 1rem;
+}
+
+.about-research h3 {
+  margin-bottom: 0.75rem;
+}
+
+.theme-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1.75rem 0;
+}
+
+.theme-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.theme-text h4 {
+  margin: 0 0 0.5rem 0;
+}
+
+.theme-media {
+  flex: 0 0 230px; /* controls right column width */
+}
+
+/* Square placeholder (until you pick real images) */
+.img-square {
+  width: 230px;
+  height: 230px;
+  border: 2px dashed rgba(255,255,255,0.35);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+}
+
+/* If you swap to a real <img> */
+.img-square-img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Responsive stacking */
+@media screen and (max-width: 980px) {
+  .theme-block {
+    flex-direction: column;
+  }
+  .theme-media {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .img-square,
+  .img-square-img {
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+  }
+}
+/* Square video container */
+.theme-video {
+  width: 230px;
+  height: 230px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.06);
+}
+
+/* Make the video fill the square nicely */
+.img-square-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops to square without distortion */
+  display: block;
+}
