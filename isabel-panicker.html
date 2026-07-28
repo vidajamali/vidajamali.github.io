@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Isabel Panicker | Jamali Lab</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      overflow-y: auto;
+    }
+
+    .profile-wrapper {
+      position: relative;
+      z-index: 3;
+      width: min(920px, calc(100% - 2rem));
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: rgba(27, 31, 34, 0.88);
+      border: solid 1px rgba(255, 255, 255, 0.25);
+      border-radius: 4px;
+    }
+
+    .profile-header {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border: solid 1px rgba(255, 255, 255, 0.35);
+      border-radius: 4px;
+    }
+
+    .profile-title h1 {
+      margin-bottom: 0.4rem;
+    }
+
+    .profile-title p {
+      margin-bottom: 0.75rem;
+    }
+
+    .profile-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .profile-actions .button {
+      margin: 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    @media screen and (max-width: 736px) {
+      .profile-wrapper {
+        margin: 1rem auto;
+        padding: 1.5rem;
+      }
+
+      .profile-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .profile-photo {
+        margin: 0 auto;
+      }
+
+      .profile-actions {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="bg"></div>
+
+  <main class="profile-wrapper">
+    <a class="back-link" href="./index.html#members">&larr; Back to the Jamali Lab team</a>
+
+    <section class="profile-header">
+      <img class="profile-photo" src="./images/Isabel.png" alt="Isabel Panicker" />
+
+      <div class="profile-title">
+        <h1>Isabel Panicker</h1>
+        <p><strong>PhD Student, Chemical and Biomolecular Engineering</strong></p>
+        <p>Georgia Institute of Technology</p>
+        <p>BS Chemical Engineering, Purdue University, 2023</p>
+
+        <div class="profile-actions">
+          <a href="mailto:ipanicker@gatech.edu" class="button">Email Isabel</a>
+          <a href="./Isabel_Panicker_CV.pdf" class="button primary" target="_blank" rel="noopener">View CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="major">Bio</h2>
+      <p>
+        Isabel was born and raised in suburban Chicago, Illinois. She earned her Bachelor’s
+        degree in Chemical Engineering from Purdue University in 2023. At Purdue, she worked
+        with Dr. Rakesh Agrawal in the Solar Energy Research Group, where her research focused
+        on the solution-based synthesis of multinary sulfides for photovoltaics. She also
+        worked as a Quality Engineering Intern at Tesla, contributing to continuous improvement
+        of the drive-unit manufacturing line.
+      </p>
+      <p>
+        Isabel joined the Jamali Lab in 2023. Her research focuses on nanoparticles and their
+        non-equilibrium behavior using liquid-phase transmission electron microscopy. In her
+        free time, she enjoys watching films, drawing, and painting.
+      </p>
+    </section>
+  </main>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/browser.min.js"></script>
+  <script src="./assets/js/breakpoints.min.js"></script>
+  <script src="./assets/js/util.js"></script>
+  <script>
+    document.body.classList.remove('is-preload');
+  </script>
+</body>
+</html>
